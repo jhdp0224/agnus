@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agnus</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body bgcolor="black">
+    <div
+      class="agnus_mother"
+      id="agnus"
+      onclick="vanish('agnus', 'none'), vanish('close','block'), vanish('img1', 'block')"
+    >
+      <div class="agnus"><img src="agnus2.png" alt="Agnus" /></div>
+    </div>
+    <div class="img1_mother" id="img1" style="display: none">
+      <div class="img1">
+        <img src="code1.png" alt="code" />
+        <div class="hint"><a href="hint1.png" download="">download</a></div>
+      </div>
+    </div>
+
+    <div
+      class="close"
+      id="close"
+      onclick="vanish('agnus', 'block'), vanish('close','none'), vanish('img1', 'none')"
+    >
+      <button>닫기</button>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>

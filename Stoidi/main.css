@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+.agnus_mother {
+  background-color: black;
+  min-height: 90dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.agnus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img1_mother {
+  min-height: 90dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hint {
+  text-align: center;
+  vertical-align: center;
+}
+.close {
+  text-align: center;
+  display: none;
+}
+.video {
+  text-align: center;
+}

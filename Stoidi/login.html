@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>
+      .login_mother {
+        min-height: 90dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .submit_button {
+        text-align: center;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body bgcolor="black">
+    <div class="login_mother">
+      <div class="login" id="login">
+        <h1>Log In</h1>
+        <form action="/authentication.html" method="get">
+          <label for="id">ID :</label>
+          <input
+            type="text"
+            id="id"
+            name="id"
+            placeholder="아이디를 입력하시오"
+          /><br />
+          <label for="pw">PW :</label>
+          <input
+            type="password"
+            id="pw"
+            name="pw"
+            placeholder="비밀번호를 입력하시오"
+          />
+          <br />
+          <div class="submit_button">
+            <input type="submit" value="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      if (request.getParameter('error') == null) {
+        document.write('<h1>please login</h1>');
+      } else {
+        document.write(request.getParameter('error'));
+      }
+    </script>
+  </body>
+</html>

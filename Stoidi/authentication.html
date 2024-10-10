@@ -1,0 +1,22 @@
+<script>
+  user = 'aries';
+  password = '1234';
+
+  // URL에서 파라미터 추출
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  id = urlParams.get('id');
+  pw = urlParams.get('pw');
+
+  console.log('ID:', id);
+  console.log('PW:', pw);
+
+  if (user == id && password == pw) {
+    redirectUrl = 'welcome.html?id=' + id; // 인증 성공 시 리디렉션
+    window.location.href = redirectUrl;
+  } else {
+    redirectUrl = 'login.html?error=login-failed..';
+    window.location.href = redirectUrl;
+  }
+</script>
